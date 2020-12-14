@@ -18,7 +18,7 @@ DATAPATH = './data/'
 def render_header():
     st.write("""
         <p align="center"> 
-            <H1> Skin cancer Analyzer 
+            <H1> Skin Lesion Analyzer 
         </p>
 
     """, unsafe_allow_html=True)
@@ -87,16 +87,16 @@ def display_prediction(y_new):
 
 
 def main():
-    st.sidebar.header('Doctor Skin')
-    st.sidebar.subheader('Choose a page to proceed:')
-    page = st.sidebar.selectbox("", ["Sample Data", "Upload Your Image"])
+    st.sidebar.header('Skin Lesion Analyzer - App')
+    st.sidebar.subheader('Choose option to proceed:')
+    page = st.sidebar.selectbox("", ["Sample Image", "Upload Your Image"])
 
-    if page == "Sample Data":
-        st.header("Sample Data Prediction for Skin Cancer")
+    if page == "Sample Image":
+        st.header("Sample Image Prediction for Skin Lesion")
         st.markdown("""
-        **Now, this is probably why you came here. Let's get you some Predictions**
+        **Let's do it. Let's get you some Predictions**
 
-        You need to choose Sample Data
+        You need to choose Sample Image
         """)
 
         mov_base = ['Sample Data I']
@@ -117,7 +117,7 @@ def main():
                 st.subheader("Choose Training Algorithm!")
                 if st.checkbox('Keras'):
                     model = load_models()
-                    st.success("Hooray !! Keras Model Loaded!")
+                    st.success("Keras Model Loaded!")
                     if st.checkbox('Show Prediction Probablity on Sample Data'):
                         x_test = data_gen(DATAPATH + '/ISIC_0024312.jpg')
                         y_new, Y_pred_classes = predict(x_test, model)
