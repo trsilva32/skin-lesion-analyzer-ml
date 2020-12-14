@@ -1,6 +1,12 @@
-# Doctor Skin
-O câncer de pele é o mais comum, e é diagnosticado principalmente visualmente, começando com uma triagem clínica inicial e seguido potencialmente por análise dermatoscópica, biópsia e exame histopatológico. A classificação automatizada de lesões cutâneas por meio de imagens é uma tarefa desafiadora devido à variabilidade refinada na aparência das lesões cutâneas.
+# Skin Cancer Analyzer App - Harvard Challenge
+###### Tech Keywords: python, tensorflow, keras,heroku, ML, Machine Learning, Deep Learning, App 
+###### Keywords: Cancer, Skin Lesions, Harvard, Dataverse, HAM10000 dataset
+###### [-->The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions<--]
 
-Dataset utilizado: HAM10000 ("Human Against Machine with 10000 training images"). https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
+> According to Havard challenge showed on [page](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T). It's necessary develop a Deep Learning App to be trained with 1000 images dataset, to identify what type of skin lesion is on picture select by the user. 
+> Based on the information, data and instructions of the [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T) find bellow the app developed to the challenge.
 
-#### Deploy [Heroku](https://doctor-skin.herokuapp.com/)
+#### Demo Application Deployed on [Heruko](https://trs-cancer-detection-ml.herokuapp.com/)
+
+### App made with ![](streamlit-logo.png)
+### ML Powered with ![keras](keras.png)
